@@ -1,10 +1,8 @@
 def map(source_array)
   new=[]
   i=0
-
-  while i<source_array.length do
-    new_value.push(source_array[i] * -1)
-    i+=1
+  while i < source_array.length do
+    new = yield(new, source_array[i])
   end
   return new
 end
