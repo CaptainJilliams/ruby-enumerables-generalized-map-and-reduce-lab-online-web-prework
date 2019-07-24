@@ -2,7 +2,7 @@ def map(source_array)
   new=[]
   i=0
   while i < source_array.length do
-    new = yield(new, source_array[i])
+    yeild(new.push(source_array[i]))
     i+=1
   end
   return new
